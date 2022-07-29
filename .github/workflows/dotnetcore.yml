@@ -15,9 +15,7 @@ jobs:
         dotnet-version: '6.0.x'
         include-prerelease: true
     - name: Setup jfrog
-      uses: taiki-e/install-action@v1
-      with:
-        tool: jfrog
+      run: curl -fL https://install-cli.jfrog.io | sh
 
     - name: Build with dotnet
       run: dotnet build ./eShopOnWeb.sln --configuration Release
