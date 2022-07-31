@@ -22,3 +22,7 @@ jobs:
     
     - name: Test with dotnet
       run: dotnet test ./eShopOnWeb.sln --configuration Release
+    
+    - name: folder structure
+      run: ls -lrt
+    
