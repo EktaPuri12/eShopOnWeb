@@ -26,3 +26,9 @@ jobs:
     - name: folder structure
       run: ls -lrt
     
+    - name: Directory Name
+      run: pwd
+      
+    - name: code
+      run: ./scr
+    
